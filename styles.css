@@ -256,27 +256,21 @@ section>h3 {
 }
 
 .mvs-logo-portfolio {
-    justify-items: flex-end;
-    justify-self:flex-end;
-    margin-right:150px;
+    justify-self:center;
 }
 
 .cart-logo-about {
-    justify-self:flex-end;
-    margin-left:150px;
+    justify-self:center;
 }
 
 .google-logo-about {
-    justify-self:flex-end;
-    margin-right:150px;
+    justify-self:center;
 }
 
 .showcase-award {
-    justify-self:flex-end;
-    margin-left:150px;
+    justify-self:center;
 }
 
 .dji-hsr-footage-mvs {
-    justify-self:flex-end;
-    margin-right:150px;
+    justify-self:center;
 }
