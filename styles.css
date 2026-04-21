@@ -327,6 +327,120 @@ section>h3 {
     }
 
     & p {
-        font-size: 20px;
+        font-size: 25px;
     }
+}
+
+#MVS-home {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    direction:rtl;
+
+    & h4 {
+        font-size:35px;
+    }
+
+    & p {
+        font-size:25px;
+    }
+}
+
+#zoologix-home {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+
+    & h4 {
+        font-size:35px;
+    }
+
+    & p {
+        font-size:25px;
+    }
+}
+
+#header-info {
+    display:flex;
+    flex-direction:column;
+}
+
+
+#resume-header {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0;
+    margin-bottom:0em;
+    justify-items:center;
+
+    & img {
+        aspect-ratio: 1/1;
+        border-radius:20px;
+        width:180px;
+        justify-self:center;
+        align-self:center;
+    }
+
+    & #resume-name {
+        font-size:50px;
+        gap:0;
+    }
+
+    & p {
+        font-size:30px;
+    }
+}
+
+#skills {
+    font-size:30px;
+    
+}
+
+#certifications {
+    font-size:30px;
+    
+}
+
+#education {
+    font-size:30px;
+}
+
+#contact {
+    font-size:30px;
+    
+}
+
+#professional-summary {
+    font-size:30px;
+    
+}
+
+
+.resume-info {
+    display:flex;
+    align-content: center;
+    justify-content:center;
+    gap:10em;
+}
+
+#project {
+    font-size:30px;
+}
+
+#resume-left {
+    display:flex;
+    flex-direction:column;
+    max-width:800px;
+}
+
+#resume-right {
+    display:flex;
+    flex-direction:column;
+    max-width:800px;
+    justify-content:center;
+}
+
+#resume-title {
+    text-align:center;
+    font-size:50px;
 }
