@@ -17,6 +17,20 @@ nav {
     padding: 1.5em
 }
 
+.circle {
+    height:24px;
+    width:24px;
+    border-radius: 24px;
+    background-color:#A42715;
+    position:absolute;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+
+
+
+
 nav>p {
     font-size: 30px;
 }
