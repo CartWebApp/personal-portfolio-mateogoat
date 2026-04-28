@@ -23,10 +23,11 @@ nav {
     width:24px;
     border-radius: 24px;
     background-color:#A42715;
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     pointer-events: none;
+    opacity:90%;
 }
 
 
@@ -71,7 +72,9 @@ section>h3 {
 #cart-reflection-text>p {
     font-size: 25px;
     width: 751px;
+    text-align: left;
 }
+
 
 .cart-reflection {
     display: grid;
