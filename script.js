@@ -29,4 +29,3 @@ function animateCircles() {
         y += (nextCircle.y - y) * 0.15;
     });
 }
-
