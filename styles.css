@@ -8,6 +8,7 @@
 body {
     font-family: var(--font-family);
     background: var(--background-image) repeat;
+    cursor:none;
 }
 
 nav {
