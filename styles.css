@@ -1327,6 +1327,7 @@ section>h3 {
     .introduction {
         display:flex;
         flex-direction:column-reverse;
+        padding:20px;
     }
 
     .cart-reflection {
