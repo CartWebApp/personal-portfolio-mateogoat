@@ -8,26 +8,31 @@
 body {
     font-family: var(--font-family);
     background: var(--background-image) repeat;
-    cursor:none;
+    cursor: none;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.5em
+    align-items: center;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 3.5em;
+    border-bottom: 5px solid black;
 }
 
 .circle {
-    height:24px;
-    width:24px;
+    height: 24px;
+    width: 24px;
     border-radius: 24px;
-    background-color:#A42715;
-    position:fixed;
-    top:0;
-    left:0;
+    background-color: #A42715;
+    position: fixed;
+    top: 0;
+    left: 0;
     pointer-events: none;
-    opacity:90%;
+    opacity: 90%;
 }
 
 
@@ -83,6 +88,7 @@ section>h3 {
     align-items: center;
     grid-gap: 10px;
     direction: rtl;
+    text-align: left;
 }
 
 #certifications-text>p {
@@ -101,6 +107,7 @@ section>h3 {
 #awards-text {
     font-size: 25px;
     width: 681px;
+    text-align: left;
 }
 
 .awards {
@@ -124,6 +131,10 @@ section>h3 {
     align-items: center;
     grid-gap: 10px;
     /* direction:rtl; */
+
+    & img {
+        border: 5px solid black;
+    }
 }
 
 #projects {
@@ -186,11 +197,11 @@ section>h3 {
 }
 
 
-#spotify {
+#zoologix {
     display: flex;
     flex-direction: row;
-    background-color: #1ED760;
-    color: white;
+    background-color: #C27029;
+    color: black;
     width: 400px;
     height: 200px;
     justify-content: center;
@@ -521,6 +532,82 @@ section>h3 {
     }
 }
 
+#pawpal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
+
+    & section {
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            font-size: 70px;
+        }
+
+        & p {
+            font-size: 30px;
+        }
+
+        & li {
+            font-size: 30px;
+        }
+    }
+
+    & img {
+        border: 5px solid black;
+        border-radius: 20px;
+        justify-self: flex-end;
+    }
+}
+
+
+#pawpal-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+        & h2 {
+            font-size: 70px;
+        }
+
+        & p {
+            font-size: 30px;
+            align-self: center;
+            font-weight: 700;
+        }
+
+        & li {
+            font-size: 30px;
+        }
+
+        & img {
+            aspect-ratio: 1/1;
+            width: 500px;
+            border: 5px solid black;
+            border-radius: 20px;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    & img {
+        border: 5px solid black;
+        border-radius: 20px;
+        justify-self: flex-start;
+    }
+}
+
 
 /* PROJECT #1: EECU BUDGET CALCULATOR CSS*/
 
@@ -616,6 +703,20 @@ section>h3 {
 }
 
 
+.languages-used {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 70px;
+
+    & img {
+        aspect-ratio: 1/1;
+        width: 200px;
+    }
+}
+
+
 .bio-shield-right {
     display: flex;
     flex-direction: column;
@@ -636,6 +737,189 @@ section>h3 {
         font-size: 30px;
     }
 }
+
+.bio-shield-snapshot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+
+    & img {
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+}
+
+#bio-shield-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
+
+    & img {
+        width: 1000px;
+        justify-self: flex-end;
+        align-self: center;
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & h2 {
+            font-size: 70px;
+        }
+
+        & p {
+            font-size: 30px;
+        }
+
+        & li {
+            font-size: 30px;
+        }
+
+        & img {
+            width: 365px;
+            height: 703px;
+            border: 5px solid black;
+            border-radius: 20px;
+            justify-self: flex-end;
+        }
+
+    }
+}
+
+
+#bio-shield-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
+
+    & img {
+        width: 1000px;
+        justify-self: flex-start;
+        align-self: center;
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & h2 {
+            font-size: 70px;
+        }
+
+        & p {
+            font-size: 30px;
+            align-self: center;
+        }
+
+        & li {
+            font-size: 30px;
+        }
+
+        & img {
+            aspect-ratio: 1/1;
+            width: 500px;
+        }
+    }
+}
+
+
+#eecu-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 200px;
+
+    & h2 {
+        font-size: 70px;
+    }
+
+    & p {
+        font-size: 30px;
+    }
+
+    & li {
+        font-size: 30px;
+    }
+
+    & img {
+        width: 365px;
+        height: 703px;
+        border: 5px solid black;
+        border-radius: 20px;
+        justify-self: flex-end;
+    }
+}
+
+#eecu-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 200px;
+
+}
+
+#eecu-info-2 article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & h2 {
+        font-size: 70px;
+    }
+
+    & ul {
+        justify-self: flex-start;
+        align-self: flex-start;
+    }
+
+    & li {
+        font-size: 30px;
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
+
+    & img {
+        aspect-ratio: 1/1;
+        width: 350px;
+        border: 5px solid black;
+        border-radius: 20px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    & p {
+        font-size: 25px;
+        font-weight: 700;
+        align-self: center;
+    }
+}
+
+.eecu-mobile-image {
+    width: 365px;
+    height: 703px;
+    border: 5px solid black;
+    border-radius: 20px;
+    justify-self: flex-start;
+}
+
+
+
 
 
 /* UX Design Projects*/
@@ -700,54 +984,338 @@ section>h3 {
 }
 
 
-#contact-form {
+#mvs-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
+
+    & img {
+        border-radius: 20px;
+        align-self: center;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            font-size: 70px;
+        }
+
+        & p {
+            font-size: 30px;
+        }
+
+    }
+}
+
+#mvs-info-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
+
+    & img {
+        border-radius: 20px;
+        align-self: center;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            font-size: 70px;
+        }
+
+        & p {
+            font-size: 30px;
+        }
+
+        & li {
+            font-size: 30px;
+        }
+    }
+}
+
+.applications-used {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+
+    & p {
+        font-size: 70px;
+        text-align: left;
+        justify-self: flex-start;
+    }
+}
+
+#mvs-other-device-mockups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    & p {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    & section {
+        display: flex;
+        flex-direction: row;
+        gap: 500px;
+    }
+}
+
+#mvs-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
+
+    & img {
+        border-radius: 20px;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+        & h2 {
+            font-size: 70px;
+        }
+
+        & p {
+            font-size: 30px;
+            align-self: center;
+            font-weight: 700;
+        }
+
+        & li {
+            font-size: 30px;
+        }
+
+        & img {
+            aspect-ratio: 1/1;
+            width: 500px;
+            align-self: center;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+    }
+}
+
+/* Zoologix */
+
+#zoologix-project {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:10em;
+    padding-bottom:200px;
+}
+
+.zoologix-left {
+    display:flex;
+    flex-direction:column;
+    gap:11em;
+
+    & h2 {
+        font-size:70px;
+        align-self:center;
+    }
+
+    & p {
+        font-size:30px;
+    }
+}
+
+
+
+.zoologix-right {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    & img {
+        aspect-ratio:16/8;
+        width:900px;
+    }
+
+    & h2 {
+        font-size:70px;
+    }
+
+    & p {
+        font-size:30px;
+    }
+}
+
+#zoologix-snapshot {
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    border-radius:15px;
     gap:30px;
+
+    & img {
+        height:450px;
+    }
+
+    & p {
+        font-size:30px;
+        font-weight:700;
+    }
+}
+
+#zoologix-info-1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    align-content:center;
+    margin:200px;
+
+    & img {
+        align-self:center;
+    }
+
+    & section {
+        display:flex;
+        flex-direction:column;
+        
+
+        & h2 {
+            font-size:70px;
+        }
+
+        & p {
+            font-size:30px;
+        }
+
+        & li {
+            font-size:30px;
+        }
+    }
+}
+
+#zoologix-mockups {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    
+     & article {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap:250px;
+
+        & img {
+            height:500px;
+            border-radius:20px;
+            border: 5px solid black;
+        }
+     }
+
+     & p {
+        font-size:30px;
+        font-weight:700;
+     }
+}
+
+
+#zoologix-info-2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    align-content:center;
+    margin:200px;
+
+    & img {
+        justify-self:center;
+        align-self:center;
+        border: 5px solid black;
+        border-radius:20px;
+    }
+
+    & article {
+        display:flex;
+        flex-direction:column;
+
+        & h2 { 
+            font-size:70px;
+        }
+
+        & li {
+            font-size:30px;
+        }
+    }
+}
+
+
+/* Contact Form */
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    gap: 30px;
 
 
     background: #222121;
-    color:white;
+    color: white;
 
 
     & input {
         background-color: #A42715;
         border-radius: 15px;
-        width:425px;
-        height:137px;
+        width: 425px;
+        height: 137px;
 
 
     }
 
     & textarea {
         background: #A42715;
-        border-radius:10px;
-        width:425px;
-        height:250px;
+        border-radius: 10px;
+        width: 425px;
+        height: 250px;
 
     }
 
 
     & label {
-        font-size:40px;
+        font-size: 40px;
     }
 
     & button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #A42715;
-    width: 300px;
-    height: 90px;
-    border-radius: 20px;
-    color: #FFF;
-    font-family: var(--font-family);
-    font-size: 30px;
-    text-decoration: none;
-    align-self: center;
-    text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A42715;
+        width: 300px;
+        height: 90px;
+        border-radius: 20px;
+        color: #FFF;
+        font-family: var(--font-family);
+        font-size: 30px;
+        text-decoration: none;
+        align-self: center;
+        text-align: center;
     }
 }
