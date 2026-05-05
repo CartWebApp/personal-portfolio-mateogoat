@@ -1416,8 +1416,8 @@ section>h3 {
     & img {
         height: clamp(750px, 10vw, 500px);
         border-radius: 20px;
-        justify-self:center;
-        align-self:center;
+        justify-self: center;
+        align-self: center;
     }
 
     & article {
@@ -1443,7 +1443,47 @@ section>h3 {
 /* Showcase Reflection */
 
 
+#showcase-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
+.showcase-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    & h2 {
+        font-size: clamp(2rem, 10vw, 5rem);
+    }
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+    }
+}
+
+.showcase-right {
+    display: flex;
+    flex-direction: column;
+
+    & img {
+        height: clamp(450px, 10vw, 500px);
+        border-radius: 20px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    & h2 {
+        font-size: clamp(2rem, 10vw, 5rem);
+    }
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+    }
+}
 
 
 /* Contact Form */
