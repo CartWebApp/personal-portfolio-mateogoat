@@ -189,8 +189,8 @@ section>h3 {
     flex-direction: row;
     background-color: #0156A6;
     color: white;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -203,8 +203,8 @@ section>h3 {
     flex-direction: row;
     background-color: #2B5861;
     color: white;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -222,8 +222,8 @@ section>h3 {
     flex-direction: row;
     background-color: #C27029;
     color: black;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -237,8 +237,8 @@ section>h3 {
     flex-direction: row;
     background-color: #00273B;
     color: white;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -251,8 +251,8 @@ section>h3 {
     flex-direction: row;
     background-color: #222121;
     color: white;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -265,8 +265,8 @@ section>h3 {
     flex-direction: row;
     background-color: #222121;
     color: white;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -279,8 +279,8 @@ section>h3 {
     flex-direction: row;
     background-color: #D97757;
     color: black;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -293,8 +293,8 @@ section>h3 {
     flex-direction: row;
     background-color: #FBF3DD;
     color: black;
-    width: 400px;
-    height: 200px;
+    aspect-ratio:2/1;
+    width:clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -1716,4 +1716,25 @@ section>h3 {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+
+    .web-projects {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-gap: 60px;
+        padding: 1.5em;
+    }
+
+    .ux-projects {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    .writing-projects {
+        display:grid;
+        grid-template-columns:1fr;
+        grid-gap:60px;
+    }
+
 }
