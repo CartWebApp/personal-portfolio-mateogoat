@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +57,7 @@ nav>ul {
 }
 
 section>h3 {
-    font-size: 80px;
+     font-size:clamp(2rem, 10vw, 5rem);
 }
 
 #intro-text>p {
@@ -75,7 +75,7 @@ section>h3 {
 }
 
 #cart-reflection-text>p {
-    font-size:clamp(.5rem, 3vw, 2rem);
+    font-size:clamp(.5rem, 4.5vw, 2rem);
     text-align: left;
 }
 
@@ -92,8 +92,7 @@ section>h3 {
 }
 
 #certifications-text>p {
-    font-size: 25px;
-    width: 712px;
+    font-size:clamp(.5rem, 4.5vw, 2rem);
 }
 
 .certifications {
@@ -102,10 +101,12 @@ section>h3 {
     justify-items: center;
     align-items: center;
     grid-gap: 10px;
+    text-align:left;
+    padding:20px;
 }
 
 #awards-text {
-    font-size:clamp(.5rem, 3vw, 2rem);
+    font-size:clamp(.5rem, 4.5vw, 2rem);
     text-align: left;
 }
 
@@ -116,12 +117,11 @@ section>h3 {
     align-items: center;
     grid-gap: 10px;
     direction: rtl;
-    padding:100px;
+    padding:20px;
 }
 
 #hobbies-text {
-    font-size: 25px;
-    width: 681px;
+    font-size:clamp(.5rem, 4.5vw, 2rem);
 }
 
 .hobbies {
@@ -130,12 +130,15 @@ section>h3 {
     justify-items: center;
     align-items: center;
     grid-gap: 10px;
+    padding:20px;
     /* direction:rtl; */
 
     & img {
         border: 5px solid black;
     }
 }
+
+
 
 #projects {
     font-size: 50px;
@@ -303,6 +306,7 @@ section>h3 {
 
 .dji-hsr-footage-mvs {
     justify-self: center;
+    width:clamp(300px, 60%, 900px)
 }
 
 
