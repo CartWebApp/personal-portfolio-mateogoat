@@ -1346,6 +1346,11 @@ section>h3 {
 
 @media (max-width:1000px) {
 
+
+    .circle {
+        display:none;
+    }
+
     .navbar {
         backdrop-filter: none;
     }
