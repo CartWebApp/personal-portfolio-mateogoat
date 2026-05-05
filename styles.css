@@ -1485,6 +1485,34 @@ section>h3 {
     }
 }
 
+#showcase-overview {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    align-content:center;
+
+    & img {
+        height: clamp(450px, 10vw, 500px);
+        padding:20px;
+        border-radius:20px;
+    }
+
+    & article {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        padding:20px;
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+
+    }
+}
+
 
 /* Contact Form */
 
