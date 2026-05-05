@@ -437,25 +437,46 @@ section>h3 {
 }
 
 #skills {
-    font-size: 30px;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+
+    & h4 {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
+
 }
 
 #certifications {
-    font-size: 30px;
+    font-size: clamp(.2rem, 5vw, 2rem);
+
+    & h4 {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
 
 }
 
 #education {
-    font-size: 30px;
+    font-size: clamp(.2rem, 5vw, 2rem);
+
+    & h4 {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
 }
 
 #contact {
-    font-size: 30px;
+    font-size: clamp(.2rem, 5vw, 2rem);
+
+    & h4 {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
 
 }
 
 #professional-summary {
-    font-size: 30px;
+    font-size: clamp(.2rem, 5vw, 2rem);
+
+    & h4 {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
 
 }
 
@@ -467,7 +488,11 @@ section>h3 {
 }
 
 #project {
-    font-size: 30px;
+    font-size: clamp(.2rem, 5vw, 2rem);
+
+    & h4 {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
 }
 
 #resume-left {
@@ -511,7 +536,7 @@ section>h3 {
     gap: 4.7em;
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -530,7 +555,7 @@ section>h3 {
     }
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -567,7 +592,7 @@ section>h3 {
         flex-direction: column;
 
         & h2 {
-            font-size: 70px;
+            font-size: clamp(2rem, 10vw, 5rem);
         }
 
         & p {
@@ -601,7 +626,7 @@ section>h3 {
 
 
         & h2 {
-            font-size: 70px;
+            font-size: clamp(2rem, 10vw, 5rem);
         }
 
         & p {
@@ -650,7 +675,7 @@ section>h3 {
     gap: 14.8em;
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -671,7 +696,7 @@ section>h3 {
     }
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -717,7 +742,7 @@ section>h3 {
     gap: 11.5em;
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -753,7 +778,7 @@ section>h3 {
     }
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -796,7 +821,7 @@ section>h3 {
         gap: 30px;
 
         & h2 {
-            font-size: 70px;
+            font-size: clamp(2rem, 10vw, 5rem);
         }
 
         & p {
@@ -840,7 +865,7 @@ section>h3 {
         gap: 30px;
 
         & h2 {
-            font-size: 70px;
+            font-size: clamp(2rem, 10vw, 5rem);
         }
 
         & p {
@@ -868,7 +893,7 @@ section>h3 {
     margin: 200px;
 
     & h2 {
-        font-size: 70px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -903,7 +928,7 @@ section>h3 {
     gap: 30px;
 
     & h2 {
-        font-size: 70px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & ul {
@@ -963,7 +988,7 @@ section>h3 {
     flex-direction: column;
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -982,7 +1007,7 @@ section>h3 {
     }
 
     & h2 {
-        font-size: 80px;
+        font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
@@ -1024,7 +1049,7 @@ section>h3 {
         flex-direction: column;
 
         & h2 {
-            font-size: 70px;
+            font-size: clamp(2rem, 10vw, 5rem);
         }
 
         & p {
@@ -1051,7 +1076,7 @@ section>h3 {
         flex-direction: column;
 
         & h2 {
-            font-size: 70px;
+            font-size: clamp(2rem, 10vw, 5rem);
         }
 
         & p {
@@ -1115,7 +1140,7 @@ section>h3 {
 
 
         & h2 {
-            font-size: 70px;
+            font-size: clamp(2rem, 10vw, 5rem);
         }
 
         & p {
@@ -1486,22 +1511,23 @@ section>h3 {
 }
 
 #showcase-overview {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items:center;
-    align-content:center;
+    justify-items: center;
+    align-content: center;
 
     & img {
         height: clamp(450px, 10vw, 500px);
-        padding:20px;
-        border-radius:20px;
+        padding: 20px;
+        border-radius: 20px;
     }
 
     & article {
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        padding:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
         }
@@ -1678,5 +1704,16 @@ section>h3 {
 
     #zoologix-snapshot {
         display: none;
+    }
+
+
+    .resume-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #resume-header {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
