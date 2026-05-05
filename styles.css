@@ -11,7 +11,24 @@ body {
     cursor: none;
 }
 
-nav {
+.navbar-toggle {
+    background: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color:black;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,11 +55,11 @@ nav {
 
 
 
-nav>p {
-    font-size:30px;
+.navbar-container>p {
+    font-size: 30px;
 }
 
-nav>ul {
+.navbar-container>ul {
     display: flex;
     gap: 20px;
     padding: 0;
@@ -57,11 +74,11 @@ nav>ul {
 }
 
 section>h3 {
-     font-size:clamp(2rem, 10vw, 5rem);
+    font-size: clamp(2rem, 10vw, 5rem);
 }
 
 #intro-text>p {
-    font-size:clamp(.5rem, 4vw, 2rem);
+    font-size: clamp(.5rem, 4vw, 2rem);
 
 }
 
@@ -71,11 +88,11 @@ section>h3 {
     justify-items: center;
     align-items: center;
     grid-gap: 10px;
-    padding:100px;
+    padding: 100px;
 }
 
 #cart-reflection-text>p {
-    font-size:clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.5rem, 4.5vw, 2rem);
     text-align: left;
 }
 
@@ -88,11 +105,11 @@ section>h3 {
     grid-gap: 10px;
     direction: rtl;
     text-align: left;
-    padding:20px;
+    padding: 20px;
 }
 
 #certifications-text>p {
-    font-size:clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.5rem, 4.5vw, 2rem);
 }
 
 .certifications {
@@ -101,12 +118,12 @@ section>h3 {
     justify-items: center;
     align-items: center;
     grid-gap: 10px;
-    text-align:left;
-    padding:20px;
+    text-align: left;
+    padding: 20px;
 }
 
 #awards-text {
-    font-size:clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.5rem, 4.5vw, 2rem);
     text-align: left;
 }
 
@@ -117,11 +134,11 @@ section>h3 {
     align-items: center;
     grid-gap: 10px;
     direction: rtl;
-    padding:20px;
+    padding: 20px;
 }
 
 #hobbies-text {
-    font-size:clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.5rem, 4.5vw, 2rem);
 }
 
 .hobbies {
@@ -130,7 +147,7 @@ section>h3 {
     justify-items: center;
     align-items: center;
     grid-gap: 10px;
-    padding:20px;
+    padding: 20px;
     /* direction:rtl; */
 
     & img {
@@ -287,13 +304,13 @@ section>h3 {
 
 .mvs-logo-portfolio {
     justify-self: center;
-    width:clamp(100px, 70%, 300px);
-    
+    width: clamp(100px, 70%, 300px);
+
 }
 
 .cart-logo-about {
     justify-self: center;
-     width:clamp(100px, 70%, 300px);
+    width: clamp(100px, 70%, 300px);
 }
 
 .google-logo-about {
@@ -306,7 +323,7 @@ section>h3 {
 
 .dji-hsr-footage-mvs {
     justify-self: center;
-    width:clamp(300px, 60%, 900px)
+    width: clamp(300px, 60%, 900px)
 }
 
 
@@ -415,12 +432,12 @@ section>h3 {
     }
 
     & p {
-        font-size:30px;
+        font-size: 30px;
     }
 }
 
 #skills {
-    font-size:30px;
+    font-size: 30px;
 }
 
 #certifications {
@@ -433,12 +450,12 @@ section>h3 {
 }
 
 #contact {
-    font-size:30px;
+    font-size: 30px;
 
 }
 
 #professional-summary {
-    font-size:30px;
+    font-size: 30px;
 
 }
 
@@ -450,7 +467,7 @@ section>h3 {
 }
 
 #project {
-    font-size:30px;
+    font-size: 30px;
 }
 
 #resume-left {
@@ -463,7 +480,7 @@ section>h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width:800px;
+    max-width: 800px;
 }
 
 #resume-title {
@@ -1124,148 +1141,148 @@ section>h3 {
 /* Zoologix */
 
 #zoologix-project {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    gap:10em;
-    padding-bottom:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    padding-bottom: 200px;
 }
 
 .zoologix-left {
-    display:flex;
-    flex-direction:column;
-    gap:11em;
+    display: flex;
+    flex-direction: column;
+    gap: 11em;
 
     & h2 {
-        font-size:70px;
-        align-self:center;
+        font-size: 70px;
+        align-self: center;
     }
 
     & p {
-        font-size:30px;
+        font-size: 30px;
     }
 }
 
 
 
 .zoologix-right {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     & img {
-        aspect-ratio:16/8;
-        width:900px;
+        aspect-ratio: 16/8;
+        width: 900px;
     }
 
     & h2 {
-        font-size:70px;
+        font-size: 70px;
     }
 
     & p {
-        font-size:30px;
+        font-size: 30px;
     }
 }
 
 #zoologix-snapshot {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 
     & img {
-        height:450px;
+        height: 450px;
     }
 
     & p {
-        font-size:30px;
-        font-weight:700;
+        font-size: 30px;
+        font-weight: 700;
     }
 }
 
 #zoologix-info-1 {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items:center;
-    align-content:center;
-    margin:200px;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
 
     & img {
-        align-self:center;
+        align-self: center;
     }
 
     & section {
-        display:flex;
-        flex-direction:column;
-        
+        display: flex;
+        flex-direction: column;
+
 
         & h2 {
-            font-size:70px;
+            font-size: 70px;
         }
 
         & p {
-            font-size:30px;
+            font-size: 30px;
         }
 
         & li {
-            font-size:30px;
+            font-size: 30px;
         }
     }
 }
 
 #zoologix-mockups {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-items:center;
-    
-     & article {
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-        align-items:center;
-        gap:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    & article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 250px;
 
         & img {
-            height:500px;
-            border-radius:20px;
+            height: 500px;
+            border-radius: 20px;
             border: 5px solid black;
         }
-     }
+    }
 
-     & p {
-        font-size:30px;
-        font-weight:700;
-     }
+    & p {
+        font-size: 30px;
+        font-weight: 700;
+    }
 }
 
 
 #zoologix-info-2 {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items:center;
-    align-content:center;
-    margin:200px;
+    justify-items: center;
+    align-content: center;
+    margin: 200px;
 
     & img {
-        justify-self:center;
-        align-self:center;
+        justify-self: center;
+        align-self: center;
         border: 5px solid black;
-        border-radius:20px;
+        border-radius: 20px;
     }
 
     & article {
-        display:flex;
-        flex-direction:column;
+        display: flex;
+        flex-direction: column;
 
-        & h2 { 
-            font-size:70px;
+        & h2 {
+            font-size: 70px;
         }
 
         & li {
-            font-size:30px;
+            font-size: 30px;
         }
     }
 }
@@ -1328,29 +1345,73 @@ section>h3 {
 
 
 @media (max-width:1000px) {
+
+    .navbar {
+        backdrop-filter: none;
+    }
+
+
+    .navbar-container .navbar-menu {
+        display:none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.7rem;
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0px 10px 10px #000;
+        backdrop-filter: blur(3px);
+    }
+
+    .navbar-toggle {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar-container .navbar-menu.active {
+        display: flex;
+
+    }
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform:translateY(-8px) rotate(-45deg);
+    }
+
     .introduction {
-        display:flex;
-        flex-direction:column-reverse;
-        padding:20px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
     }
 
     .cart-reflection {
-        display:flex;
-        flex-direction:column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .certifications {
-        display:flex;
-        flex-direction:column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .awards {
-        display:flex;
-        flex-direction:column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .hobbies {
-        display:flex;
-        flex-direction:column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
