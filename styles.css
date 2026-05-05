@@ -1146,7 +1146,7 @@ section>h3 {
     justify-content: center;
     align-items: center;
     gap: 10em;
-    padding:20px;
+    padding: 20px;
 }
 
 .zoologix-left {
@@ -1166,7 +1166,7 @@ section>h3 {
 
 
 .zoologix-team {
-    padding:20px;
+    padding: 20px;
 }
 
 
@@ -1177,9 +1177,9 @@ section>h3 {
 
     & img {
         aspect-ratio: 16/8;
-        width:clamp(100px, 100vw, 900px);
-        justify-self:center;
-        align-self:center;
+        width: clamp(100px, 100vw, 900px);
+        justify-self: center;
+        align-self: center;
     }
 
     & h2 {
@@ -1294,6 +1294,156 @@ section>h3 {
         }
     }
 }
+
+/* Trion Supercars Page */
+
+
+#trion-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trion-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    & header {
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+
+    .trion-roles {
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+.trion-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    & img {
+
+        height: clamp(300px, 10vw, 500px);
+        border-radius: 20px;
+    }
+
+    & h2 {
+        font-size: clamp(2rem, 10vw, 5rem);
+    }
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+    }
+}
+
+
+#trion-snapshot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        height: clamp(550px, 10vw, 500px);
+        border-radius: 20px;
+    }
+
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+        font-weight: 700;
+    }
+}
+
+
+#trion-info-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    padding: 20px;
+
+    & img {
+        height: clamp(950px, 10vw, 500px);
+        border-radius: 20px;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+
+        & li {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+
+#trion-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    padding: 20px;
+
+    & img {
+        height: clamp(750px, 10vw, 500px);
+        border-radius: 20px;
+        justify-self:center;
+        align-self:center;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+
+        & li {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+
+    }
+}
+
+/* Showcase Reflection */
+
+
+
 
 
 /* Contact Form */
