@@ -61,7 +61,7 @@ section>h3 {
 }
 
 #intro-text>p {
-    font-size:clamp(.5rem, 3vw, 2rem);
+    font-size:clamp(.5rem, 4vw, 2rem);
 
 }
 
@@ -88,7 +88,7 @@ section>h3 {
     grid-gap: 10px;
     direction: rtl;
     text-align: left;
-    padding:100px;
+    padding:20px;
 }
 
 #certifications-text>p {
@@ -284,13 +284,13 @@ section>h3 {
 
 .mvs-logo-portfolio {
     justify-self: center;
-    aspect-ratio: 1/1;
-    width:clamp(100px, 80%, 300px)
+    width:clamp(100px, 70%, 300px);
     
 }
 
 .cart-logo-about {
     justify-self: center;
+     width:clamp(100px, 70%, 300px);
 }
 
 .google-logo-about {
