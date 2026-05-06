@@ -1202,7 +1202,7 @@ section>h3 {
 
     & img {
         aspect-ratio: 16/8;
-        width: clamp(100px, 100vw, 900px);
+        width: clamp(100px, 90vw, 900px);
         justify-self: center;
         align-self: center;
     }
@@ -1248,6 +1248,9 @@ section>h3 {
     & section {
         display: flex;
         flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        width:clamp(350px, 40vw, 1000px);
 
 
         & h2 {
@@ -1303,12 +1306,13 @@ section>h3 {
         align-self: center;
         border: 5px solid black;
         border-radius: 20px;
-        width: clamp(100px, 70%, 450px);
+        width: clamp(100px, 50vw, 450px);
     }
 
     & article {
         display: flex;
         flex-direction: column;
+        width:clamp(350px, 40vw, 1000px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
