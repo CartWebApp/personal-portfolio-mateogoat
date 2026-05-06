@@ -553,6 +553,7 @@ section>h3 {
     & img {
         border-radius: 15px;
         border: 5px solid black;
+         width: clamp(200px, 85vw, 900px);
     }
 
     & h2 {
@@ -572,7 +573,7 @@ section>h3 {
     margin-left: 0;
 
     & img {
-        max-width: 100rem;
+        width:clamp(5rem, 80vw, 70rem);
         justify-self: center;
     }
 
@@ -590,6 +591,7 @@ section>h3 {
     & section {
         display: flex;
         flex-direction: column;
+        width: clamp(350px, 40vw, 1000px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -607,7 +609,8 @@ section>h3 {
     & img {
         border: 5px solid black;
         border-radius: 20px;
-        justify-self: flex-end;
+        width: clamp(100px, 90vw, 450px);
+        justify-self: center;
     }
 }
 
@@ -622,6 +625,7 @@ section>h3 {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        width: clamp(350px, 40vw, 1000px);
 
 
         & h2 {
@@ -635,12 +639,12 @@ section>h3 {
         }
 
         & li {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
         }
 
         & img {
             aspect-ratio: 1/1;
-            width: 500px;
+            width:clamp(150px, 70vw, 500px);
             border: 5px solid black;
             border-radius: 20px;
             justify-self: center;
@@ -651,7 +655,8 @@ section>h3 {
     & img {
         border: 5px solid black;
         border-radius: 20px;
-        justify-self: flex-start;
+        justify-self: center;
+        width: clamp(100px, 90vw, 450px);
     }
 }
 
@@ -765,7 +770,7 @@ section>h3 {
 
     & img {
         aspect-ratio: 1/1;
-        width:clamp(100px, 10vw, 200px);
+        width: clamp(100px, 10vw, 200px);
     }
 }
 
@@ -893,7 +898,7 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    padding:20px;
+    padding: 20px;
 
     & section {
         width: clamp(350px, 40vw, 1000px);
@@ -1053,6 +1058,7 @@ section>h3 {
     & article {
         display: flex;
         flex-direction: column;
+        width: clamp(100px, 90vw, 900px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -1079,6 +1085,7 @@ section>h3 {
     & article {
         display: flex;
         flex-direction: column;
+         width: clamp(100px, 90vw, 900px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -1141,6 +1148,7 @@ section>h3 {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        width: clamp(100px, 90vw, 900px);
 
 
         & h2 {
@@ -1414,6 +1422,7 @@ section>h3 {
     align-content: center;
     padding: 20px;
 
+
     & img {
         height: clamp(950px, 10vw, 500px);
         border-radius: 20px;
@@ -1423,6 +1432,7 @@ section>h3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: clamp(350px, 40vw, 1000px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -1457,6 +1467,7 @@ section>h3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: clamp(350px, 40vw, 1000px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -1527,7 +1538,8 @@ section>h3 {
     & img {
         height: clamp(450px, 10vw, 500px);
         padding: 20px;
-        border-radius: 20px;
+        border-radius: 30px;
+        border: 5px solid black;
     }
 
     & article {
@@ -1535,6 +1547,8 @@ section>h3 {
         flex-direction: column;
         justify-content: center;
         padding: 20px;
+        width: clamp(100px, 90vw, 900px);
+
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -1756,15 +1770,36 @@ section>h3 {
 
     #eecu-project {
         flex-direction: column;
-        gap:0px;
+        gap: 0px;
     }
 
     .languages-used {
-        flex-direction:column;
+        flex-direction: column;
     }
-
 
     .eecu-left {
+        gap: 0px;
+    }
+
+    #trion-project {
+        flex-direction: column;
+    }
+
+    .pawpal-left {
         gap:0px;
     }
+
+    #pawpal-project {
+        flex-direction:column;
+        gap:0px;
+    }
+
+    #pawpal-info {
+        grid-template-columns: 1fr;
+    }
+
+    #pawpal-info-2 {
+        grid-template-columns: 1fr;
+    }
+    
 }
