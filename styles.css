@@ -189,8 +189,8 @@ section>h3 {
     flex-direction: row;
     background-color: #0156A6;
     color: white;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -203,8 +203,8 @@ section>h3 {
     flex-direction: row;
     background-color: #2B5861;
     color: white;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -222,8 +222,9 @@ section>h3 {
     flex-direction: row;
     background-color: #C27029;
     color: black;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);;
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
+    ;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -237,8 +238,8 @@ section>h3 {
     flex-direction: row;
     background-color: #00273B;
     color: white;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -251,8 +252,8 @@ section>h3 {
     flex-direction: row;
     background-color: #222121;
     color: white;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -265,8 +266,8 @@ section>h3 {
     flex-direction: row;
     background-color: #222121;
     color: white;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -279,8 +280,8 @@ section>h3 {
     flex-direction: row;
     background-color: #D97757;
     color: black;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -293,8 +294,8 @@ section>h3 {
     flex-direction: row;
     background-color: #FBF3DD;
     color: black;
-    aspect-ratio:2/1;
-    width:clamp(350px, 20vw, 400px);
+    aspect-ratio: 2/1;
+    width: clamp(350px, 20vw, 400px);
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -380,7 +381,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 25px;
+        font-size: clamp(.5rem, 10vw, 2rem)
     }
 }
 
@@ -395,7 +396,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 25px;
+        font-size: clamp(.5rem, 10vw, 2rem)
     }
 }
 
@@ -409,7 +410,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 25px;
+        font-size: clamp(.5rem, 10vw, 2rem)
     }
 }
 
@@ -432,7 +433,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem)
     }
 }
 
@@ -540,7 +541,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem)
     }
 }
 
@@ -559,7 +560,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem)
     }
 }
 
@@ -576,7 +577,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem)
     }
 }
 
@@ -585,7 +586,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-    margin: 200px;
 
     & section {
         display: flex;
@@ -596,7 +596,7 @@ section>h3 {
         }
 
         & p {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem)
         }
 
         & li {
@@ -617,7 +617,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-    margin: 200px;
 
     & article {
         display: flex;
@@ -630,7 +629,7 @@ section>h3 {
         }
 
         & p {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
             align-self: center;
             font-weight: 700;
         }
@@ -679,7 +678,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -691,7 +690,10 @@ section>h3 {
 
     & img {
         border-radius: 15px;
-        max-height: 449px;
+        aspect-ratio: 16 / 8;
+        width: clamp(100px, 90vw, 900px);
+        justify-self: center;
+        align-self: center;
         border: 5px solid black;
     }
 
@@ -712,13 +714,16 @@ section>h3 {
     padding: 2em;
 
     & img {
-        max-height: 600px;
+        aspect-ratio: 16 / 8;
+        width: clamp(100px, 90vw, 900px);
+        justify-self: center;
+        align-self: center;
         border-radius: 15px;
         border: 5px solid black;
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -746,7 +751,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -756,11 +761,11 @@ section>h3 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 70px;
+    font-size: clamp(2rem, 10vw, 5rem);
 
     & img {
         aspect-ratio: 1/1;
-        width: 200px;
+        width:clamp(100px, 10vw, 200px);
     }
 }
 
@@ -782,7 +787,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -805,7 +810,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-    margin: 200px;
 
     & img {
         width: 1000px;
@@ -825,11 +829,11 @@ section>h3 {
         }
 
         & p {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
         }
 
         & li {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
         }
 
         & img {
@@ -849,7 +853,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-    margin: 200px;
 
     & img {
         width: 1000px;
@@ -869,7 +872,7 @@ section>h3 {
         }
 
         & p {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
             align-self: center;
         }
 
@@ -890,14 +893,18 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    margin: 200px;
+    padding:20px;
+
+    & section {
+        width: clamp(350px, 40vw, 1000px);
+    }
 
     & h2 {
         font-size: clamp(2rem, 10vw, 5rem);
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 
     & li {
@@ -909,7 +916,7 @@ section>h3 {
         height: 703px;
         border: 5px solid black;
         border-radius: 20px;
-        justify-self: flex-end;
+        justify-self: center;
     }
 }
 
@@ -918,7 +925,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    margin: 200px;
 
 }
 
@@ -926,6 +932,7 @@ section>h3 {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: clamp(350px, 40vw, 1000px);
 
     & h2 {
         font-size: clamp(2rem, 10vw, 5rem);
@@ -952,7 +959,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 25px;
+        font-size: clamp(.5rem, 10vw, 2rem);
         font-weight: 700;
         align-self: center;
     }
@@ -963,7 +970,7 @@ section>h3 {
     height: 703px;
     border: 5px solid black;
     border-radius: 20px;
-    justify-self: flex-start;
+    justify-self: center;
 }
 
 
@@ -992,7 +999,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -1011,7 +1018,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -1027,7 +1034,7 @@ section>h3 {
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -1037,7 +1044,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-    margin: 200px;
 
     & img {
         border-radius: 20px;
@@ -1053,7 +1059,7 @@ section>h3 {
         }
 
         & p {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
         }
 
     }
@@ -1064,7 +1070,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-    margin: 200px;
 
     & img {
         border-radius: 20px;
@@ -1080,11 +1085,11 @@ section>h3 {
         }
 
         & p {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
         }
 
         & li {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
         }
     }
 }
@@ -1111,7 +1116,7 @@ section>h3 {
     gap: 30px;
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
         font-weight: 700;
     }
 
@@ -1127,7 +1132,6 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-    margin: 200px;
 
     & img {
         border-radius: 20px;
@@ -1144,7 +1148,7 @@ section>h3 {
         }
 
         & p {
-            font-size: 30px;
+            font-size: clamp(.5rem, 10vw, 2rem);
             align-self: center;
             font-weight: 700;
         }
@@ -1212,7 +1216,7 @@ section>h3 {
     }
 
     & p {
-        font-size: clamp(.5rem, 10vw, 2rem)
+        font-size: clamp(.5rem, 10vw, 2rem);
     }
 }
 
@@ -1224,11 +1228,11 @@ section>h3 {
     gap: 30px;
 
     & img {
-        height: 450px;
+        height: clamp(100px, 30vw, 500px);
     }
 
     & p {
-        font-size: 30px;
+        font-size: clamp(.5rem, 10vw, 2rem);
         font-weight: 700;
     }
 }
@@ -1248,9 +1252,9 @@ section>h3 {
     & section {
         display: flex;
         flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        width:clamp(350px, 40vw, 1000px);
+        justify-content: center;
+        align-items: center;
+        width: clamp(350px, 40vw, 1000px);
 
 
         & h2 {
@@ -1312,7 +1316,7 @@ section>h3 {
     & article {
         display: flex;
         flex-direction: column;
-        width:clamp(350px, 40vw, 1000px);
+        width: clamp(350px, 40vw, 1000px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -1731,14 +1735,36 @@ section>h3 {
     }
 
     .ux-projects {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr;
     }
 
     .writing-projects {
-        display:grid;
-        grid-template-columns:1fr;
-        grid-gap:60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
     }
 
+    #eecu-info {
+        grid-template-columns: 1fr;
+
+    }
+
+    #eecu-info-2 {
+        grid-template-columns: 1fr;
+    }
+
+    #eecu-project {
+        flex-direction: column;
+        gap:0px;
+    }
+
+    .languages-used {
+        flex-direction:column;
+    }
+
+
+    .eecu-left {
+        gap:0px;
+    }
 }
