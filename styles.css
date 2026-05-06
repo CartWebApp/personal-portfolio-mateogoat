@@ -168,6 +168,22 @@ section>h3 {
     justify-items: center;
     grid-gap: 60px;
     padding: 1.5em;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .ux-projects {
@@ -176,12 +192,18 @@ section>h3 {
     justify-items: center;
     grid-gap: 60px;
     padding: 1.5em;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .writing-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #EECU {
@@ -553,7 +575,7 @@ section>h3 {
     & img {
         border-radius: 15px;
         border: 5px solid black;
-         width: clamp(200px, 85vw, 900px);
+        width: clamp(200px, 85vw, 900px);
     }
 
     & h2 {
@@ -573,7 +595,7 @@ section>h3 {
     margin-left: 0;
 
     & img {
-        width:clamp(5rem, 80vw, 70rem);
+        width: clamp(5rem, 80vw, 70rem);
         justify-self: center;
     }
 
@@ -644,7 +666,7 @@ section>h3 {
 
         & img {
             aspect-ratio: 1/1;
-            width:clamp(150px, 70vw, 500px);
+            width: clamp(150px, 70vw, 500px);
             border: 5px solid black;
             border-radius: 20px;
             justify-self: center;
@@ -1085,7 +1107,7 @@ section>h3 {
     & article {
         display: flex;
         flex-direction: column;
-         width: clamp(100px, 90vw, 900px);
+        width: clamp(100px, 90vw, 900px);
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
@@ -1382,7 +1404,7 @@ section>h3 {
 
     & img {
 
-        height: clamp(300px, 10vw, 500px);
+        height: clamp(150px, 15vw, 450px);
         border-radius: 20px;
     }
 
@@ -1403,7 +1425,7 @@ section>h3 {
     align-items: center;
 
     & img {
-        height: clamp(550px, 10vw, 500px);
+        height: clamp(150px, 25vw, 500px);
         border-radius: 20px;
     }
 
@@ -1746,6 +1768,7 @@ section>h3 {
         justify-items: center;
         grid-gap: 60px;
         padding: 1.5em;
+
     }
 
     .ux-projects {
@@ -1786,12 +1809,12 @@ section>h3 {
     }
 
     .pawpal-left {
-        gap:0px;
+        gap: 0px;
     }
 
     #pawpal-project {
-        flex-direction:column;
-        gap:0px;
+        flex-direction: column;
+        gap: 0px;
     }
 
     #pawpal-info {
@@ -1801,5 +1824,12 @@ section>h3 {
     #pawpal-info-2 {
         grid-template-columns: 1fr;
     }
-    
+
+    #trion-info-1 {
+        grid-template-columns: 1fr;
+    }
+
+    #trion-info-2 {
+        grid-template-columns: 1fr;
+    }
 }
