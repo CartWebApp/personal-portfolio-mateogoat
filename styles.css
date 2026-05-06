@@ -1374,6 +1374,9 @@ section>h3 {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & header {
         & h2 {
@@ -1401,6 +1404,9 @@ section>h3 {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
 
@@ -1423,6 +1429,9 @@ section>h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
         height: clamp(150px, 25vw, 500px);
@@ -1443,6 +1452,9 @@ section>h3 {
     justify-items: center;
     align-content: center;
     padding: 20px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
 
     & img {
@@ -1477,6 +1489,9 @@ section>h3 {
     justify-items: center;
     align-content: center;
     padding: 20px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
         height: clamp(750px, 10vw, 500px);
