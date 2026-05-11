@@ -43,12 +43,16 @@
 
 
 <section>
-    <form id="contact-form">
-        <label for="Name:">Name</label>
+    <form method="GET" id="contact-form" onsubmit="sendIt();return false">
+        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject">
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
