@@ -403,13 +403,19 @@ section>h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 
     & img {
         border-radius: 20px;
         border: 4px solid #000;
-
     }
 }
+
+img[alt="eecu-picture"] {
+    width: clamp(200px, 85vw, 900px);
+}
+
 
 #eecu-home-info {
     display: flex;
@@ -430,6 +436,12 @@ section>h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     direction: rtl;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+
+    & section {
+        align-self: center;
+    }
 
     & h4 {
         font-size: 35px;
@@ -439,6 +451,10 @@ section>h3 {
     & p {
         font-size: clamp(.5rem, 10vw, 2rem);
         width: clamp(350px, 40vw, 1000px);
+    }
+
+    & img {
+        width: clamp(200px, 85vw, 900px);
     }
 }
 
@@ -446,6 +462,12 @@ section>h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+
+    & section {
+        align-self: center;
+    }
 
     & h4 {
         font-size: 35px;
@@ -455,6 +477,10 @@ section>h3 {
     & p {
         font-size: clamp(.5rem, 10vw, 2rem);
         width: clamp(350px, 40vw, 1000px);
+    }
+
+    & img {
+        width: clamp(200px, 85vw, 900px);
     }
 }
 
@@ -1667,7 +1693,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     justify-self: center;
     margin: 0 auto;
     width: clamp(320px, 85vw, 2100px);
-    padding-bottom:50px;
+    padding-bottom: 50px;
 }
 
 
