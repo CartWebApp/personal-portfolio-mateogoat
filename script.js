@@ -49,7 +49,7 @@ function sendMessage() {
     console.log(name, email, subject, message);
 
 
-    const api_id = "AKfycbzk5Wof9R28KYYh7eHnh7r7oCDDpdgGjWSRh5P6xZ2LnVVHAW4nagbfuxjOI8YrHffF4g";
+    const api_id = "AKfycbwpzS12DPDmf2CY9_KahyteQEg4dhWj2wmxUHTICSXszdnARL-m9jG8GPQ5_TEB8M_b4w";
     const url = `https://script.google.com/macros/s/AKfycbwpzS12DPDmf2CY9_KahyteQEg4dhWj2wmxUHTICSXszdnARL-m9jG8GPQ5_TEB8M_b4w/exec`
     const encoded_data = encodeURI(JSON.stringify({ name: name, email: email, subject: subject, message: message }))
     const request = `${url}?data=${encoded_data}`
