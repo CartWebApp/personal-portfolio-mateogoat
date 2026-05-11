@@ -12,6 +12,7 @@ body {
 }
 
 .navbar-toggle {
+    display: none;
     background: black;
     padding: 10px;
     border: none;
@@ -78,7 +79,7 @@ section>h3 {
 }
 
 #intro-text>p {
-    font-size: clamp(.5rem, 4vw, 2rem);
+    font-size: clamp(.75rem, 5vw, 2rem);
 
 }
 
@@ -88,12 +89,14 @@ section>h3 {
     justify-items: center;
     align-items: center;
     grid-gap: 10px;
-    padding: 100px;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 }
 
 #cart-reflection-text>p {
-    font-size: clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.75rem, 5vw, 2rem);
     text-align: left;
+    margin: auto;
 }
 
 
@@ -106,10 +109,12 @@ section>h3 {
     direction: rtl;
     text-align: left;
     padding: 20px;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 }
 
 #certifications-text>p {
-    font-size: clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.75rem, 5vw, 2rem);
 }
 
 .certifications {
@@ -120,10 +125,12 @@ section>h3 {
     grid-gap: 10px;
     text-align: left;
     padding: 20px;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 }
 
 #awards-text {
-    font-size: clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.75rem, 5vw, 2rem);
     text-align: left;
 }
 
@@ -135,10 +142,12 @@ section>h3 {
     grid-gap: 10px;
     direction: rtl;
     padding: 20px;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 }
 
 #hobbies-text {
-    font-size: clamp(.5rem, 4.5vw, 2rem);
+    font-size: clamp(.75rem, 5vw, 2rem);
 }
 
 .hobbies {
@@ -148,7 +157,8 @@ section>h3 {
     align-items: center;
     grid-gap: 10px;
     padding: 20px;
-    /* direction:rtl; */
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 
     & img {
         border: 5px solid black;
@@ -327,13 +337,13 @@ section>h3 {
 
 .mvs-logo-portfolio {
     justify-self: center;
-    width: clamp(100px, 70%, 300px);
+    width: clamp(100px, 70%, 400px);
 
 }
 
 .cart-logo-about {
     justify-self: center;
-    width: clamp(100px, 70%, 300px);
+    width: clamp(100px, 70%, 400px);
 }
 
 .google-logo-about {
@@ -379,7 +389,7 @@ section>h3 {
 
 #mvs-logo {
     width: clamp(350px, 40vw, 1000px);
-    display:flex;
+    display: flex;
     width: clamp(350px, 40vw, 1000px);
 }
 
@@ -397,7 +407,7 @@ section>h3 {
     & img {
         border-radius: 20px;
         border: 4px solid #000;
-        
+
     }
 }
 
@@ -806,6 +816,12 @@ section>h3 {
         aspect-ratio: 1/1;
         width: clamp(100px, 10vw, 200px);
     }
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        gap: clamp(20px, 15vw, 250px);
+    }
 }
 
 
@@ -1170,16 +1186,26 @@ section>h3 {
     }
 }
 
+
+img[alt="mvs-qr-code-image"] {
+    aspect-ratio: 1/1;
+    width: clamp(150px, 30vh, 500px);
+    align-self: center;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+img[alt="mvs-notifcation-settings-snapshot-mobile"] {
+    border-radius: 20px;
+    height: clamp(450px, 30vw, 700px);
+}
+
+
 #mvs-info-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-
-    & img {
-        border-radius: 20px;
-        height: clamp(450px, 30vw, 700px);
-    }
 
     & article {
         display: flex;
@@ -1202,13 +1228,6 @@ section>h3 {
             font-size: 30px;
         }
 
-        & img {
-            aspect-ratio: 1/1;
-            width:clamp(150px, 30vh, 500px);
-            align-self: center;
-            border: 5px solid black;
-            border-radius: 20px;
-        }
     }
 }
 
@@ -1871,9 +1890,9 @@ section>h3 {
 
 
     #mvs-project {
-        flex-direction:column;
-        gap:0px;
-        padding:0px;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
     }
 
     #mvs-overview {
@@ -1882,6 +1901,7 @@ section>h3 {
 
     #mvs-info-1 {
         grid-template-columns: 1fr;
+        padding-bottom: 20px;
     }
 
     #mvs-info-2 {
@@ -1889,7 +1909,8 @@ section>h3 {
     }
 
     #mvs-other-device-mockups {
-        display:none;
+        display: none;
+
         & section {
             flex-direction: column;
         }
