@@ -49,8 +49,7 @@ function sendMessage() {
     console.log(name, email, subject, message);
 
 
-    const api_id = "AKfycbwpzS12DPDmf2CY9_KahyteQEg4dhWj2wmxUHTICSXszdnARL-m9jG8GPQ5_TEB8M_b4w";
-    const url = `https://script.google.com/macros/s/AKfycbwpzS12DPDmf2CY9_KahyteQEg4dhWj2wmxUHTICSXszdnARL-m9jG8GPQ5_TEB8M_b4w/exec`
+    const url = `https://script.google.com/macros/s/AKfycbwYXXUHNq6CA_tR4mjRM7W7oVaD7tTO1tvzRZotH7t5zsnESbdxGyFkF0OteYF7Kaev/exec`
     const encoded_data = encodeURI(JSON.stringify({ name: name, email: email, subject: subject, message: message }))
     const request = `${url}?data=${encoded_data}`
     fetch(request).then(resp => resp.json()).then(data => console.log(data));
