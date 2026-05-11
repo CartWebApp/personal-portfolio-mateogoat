@@ -1411,7 +1411,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     align-items: center;
     width: clamp(320px, 85vw, 1800px);
     margin: 0 auto;
-    gap:30px;
+    gap: 30px;
 }
 
 
@@ -1657,6 +1657,25 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
 
 /* Contact Form */
 
+#contact-form-h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#contact-form-p {
+    font-size: clamp(.5rem, 6vw, 2rem);
+    justify-self: center;
+    margin: 0 auto;
+    width: clamp(320px, 85vw, 2100px);
+    padding-bottom:50px;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+    opacity: 1;
+}
 
 #contact-form {
     display: flex;
@@ -1665,6 +1684,9 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     align-items: center;
     border-radius: 15px;
     gap: 30px;
+    width: clamp(320px, 85vw, 700px);
+    margin: 0 auto;
+    padding: clamp(0px, 2vw, 2em);
 
 
     background: #222121;
@@ -1674,18 +1696,19 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     & input {
         background-color: #A42715;
         border-radius: 15px;
-        width: 425px;
-        height: 137px;
-
-
+        padding: 10px;
+        height: clamp(75px, 20vh, 100px);
+        width: clamp(300px, 25vw, 550px);
+        font-size: clamp(.75rem, 7vw, 2rem);
     }
 
     & textarea {
         background: #A42715;
         border-radius: 10px;
-        width: 425px;
-        height: 250px;
-
+        height: clamp(75px, 20vh, 250px);
+        width: clamp(300px, 25vw, 550px);
+        color: white;
+        font-size: clamp(.75rem, 7vw, 2rem);
     }
 
 
