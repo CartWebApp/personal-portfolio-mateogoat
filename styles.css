@@ -419,11 +419,11 @@ section>h3 {
 
 #drone-imagery {
     width: 90%;
-    display:flex;
-    justify-self:center;
+    display: flex;
+    justify-self: center;
     border: 5px solid black;
     border-radius: 20px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 
@@ -460,14 +460,14 @@ img[alt="eecu-picture"] {
 
     & h4 {
         font-size: 35px;
-        text-align:left;
+        text-align: left;
         width: clamp(350px, 40vw, 1000px);
     }
 
     & p {
         font-size: clamp(.5rem, 10vw, 2rem);
         width: clamp(350px, 40vw, 1000px);
-        text-align:left;
+        text-align: left;
     }
 
     & img {
@@ -613,9 +613,10 @@ img[alt="eecu-picture"] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
 }
-
 
 .pawpal-left {
     display: flex;
@@ -673,6 +674,12 @@ img[alt="eecu-picture"] {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & section {
         display: flex;
@@ -706,6 +713,12 @@ img[alt="eecu-picture"] {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & article {
         display: flex;
@@ -729,12 +742,11 @@ img[alt="eecu-picture"] {
         }
 
         & img {
-            aspect-ratio: 1/1;
-            width: clamp(150px, 70vw, 500px);
+            aspect-ratio: 1 / 1;
+            width: clamp(150px, 30vh, 500px);
+            align-self: center;
             border: 5px solid black;
             border-radius: 20px;
-            justify-self: center;
-            align-self: center;
         }
     }
 
@@ -866,6 +878,9 @@ img[alt="bio-shield-netlify-qr-code"] {
     justify-content: space-around;
     align-items: center;
     font-size: clamp(2rem, 10vw, 5rem);
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
         aspect-ratio: 1/1;
@@ -924,6 +939,9 @@ img[alt="bio-shield-netlify-qr-code"] {
     margin: 0 auto;
     width: clamp(320px, 85vw, 1800px);
     gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
         width: clamp(100px, 50vw, 900px);
@@ -975,6 +993,9 @@ img[alt="bio-shield-services-snapshot"] {
     align-content: center;
     margin: 0 auto;
     width: clamp(320px, 85vw, 1800px);
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & article {
         display: flex;
@@ -1003,6 +1024,9 @@ img[alt="bio-shield-services-snapshot"] {
     justify-items: center;
     align-items: center;
     padding: 20px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & section {
         width: clamp(350px, 40vw, 1000px);
@@ -1034,6 +1058,9 @@ img[alt="bio-shield-services-snapshot"] {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
 }
 
@@ -1095,8 +1122,9 @@ img[alt="bio-shield-services-snapshot"] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10em;
-    padding: 3em;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
 }
 
 .mvs-left {
@@ -1159,7 +1187,7 @@ img[alt="bio-shield-services-snapshot"] {
 
     & img {
         border-radius: 20px;
-        width: clamp(100px, 90vw, 800px);
+        width: clamp(100px, 90vw, 600px);
         align-self: center;
     }
 
@@ -1793,9 +1821,9 @@ textarea::placeholder {
 }
 
 #homepage {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap:clamp(15px, 20vh, 50px);
+    gap: clamp(15px, 20vh, 50px);
 }
 
 
