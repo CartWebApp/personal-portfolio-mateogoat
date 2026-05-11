@@ -412,6 +412,16 @@ section>h3 {
     }
 }
 
+#drone-imagery {
+    width: 90%;
+    display:flex;
+    justify-self:center;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin:0 auto;
+}
+
+
 img[alt="eecu-picture"] {
     width: clamp(200px, 85vw, 900px);
 }
@@ -445,12 +455,14 @@ img[alt="eecu-picture"] {
 
     & h4 {
         font-size: 35px;
+        text-align:left;
         width: clamp(350px, 40vw, 1000px);
     }
 
     & p {
         font-size: clamp(.5rem, 10vw, 2rem);
         width: clamp(350px, 40vw, 1000px);
+        text-align:left;
     }
 
     & img {
@@ -1775,9 +1787,27 @@ textarea::placeholder {
     }
 }
 
+#homepage {
+    display:flex;
+    flex-direction: column;
+    gap:clamp(15px, 20vh, 50px);
+}
+
 
 @media (max-width:1000px) {
 
+
+    #eecu-home {
+        grid-template-columns: 1fr;
+    }
+
+    #MVS-home {
+        grid-template-columns: 1fr;
+    }
+
+    #zoologix-home {
+        grid-template-columns: 1fr;
+    }
 
     .circle {
         display: none;
