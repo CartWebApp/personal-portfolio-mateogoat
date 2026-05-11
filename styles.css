@@ -490,6 +490,11 @@ img[alt="eecu-picture"] {
 }
 
 
+#resume {
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+}
+
 #resume-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -530,6 +535,7 @@ img[alt="eecu-picture"] {
 
 #contact {
     font-size: clamp(.75rem, 5vw, 2rem);
+    margin: 0 auto;
 
     & h4 {
         font-size: clamp(1.5rem, 8vw, 2rem);
@@ -564,14 +570,12 @@ img[alt="eecu-picture"] {
 #resume-left {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
 }
 
 #resume-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 800px;
 }
 
 #resume-title {
@@ -734,7 +738,9 @@ img[alt="eecu-picture"] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: clamp(20px, 20vw, 200px);
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 }
 
 
@@ -761,7 +767,7 @@ img[alt="eecu-picture"] {
     & img {
         border-radius: 15px;
         aspect-ratio: 16 / 8;
-        width: clamp(100px, 90vw, 900px);
+        width: clamp(100px, 50vw, 900px);
         justify-self: center;
         align-self: center;
         border: 5px solid black;
@@ -785,7 +791,7 @@ img[alt="eecu-picture"] {
 
     & img {
         aspect-ratio: 16 / 8;
-        width: clamp(100px, 90vw, 900px);
+        width: clamp(100px, 50vw, 1000px);
         justify-self: center;
         align-self: center;
         border-radius: 15px;
@@ -801,12 +807,23 @@ img[alt="eecu-picture"] {
 /* Bio Shield */
 
 
+img[alt="bio-shield-netlify-qr-code"] {
+    aspect-ratio: 1 / 1;
+    width: clamp(150px, 30vh, 500px);
+    border: 5px solid black;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
 #bio-shield-project {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: clamp(20px, 20vw, 200px);
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
 }
 
 
@@ -841,7 +858,7 @@ img[alt="eecu-picture"] {
     & div {
         display: flex;
         flex-direction: row;
-        gap: clamp(20px, 15vw, 250px);
+        gap: clamp(20px, 5vw, 250px);
     }
 }
 
@@ -854,8 +871,8 @@ img[alt="eecu-picture"] {
 
     & img {
         border-radius: 15px;
-        width: clamp(200px, 85vw, 900px);
         border: 5px solid black;
+        width: clamp(100px, 50vw, 900px);
     }
 
     & h2 {
@@ -887,9 +904,12 @@ img[alt="eecu-picture"] {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
+    margin: 0 auto;
+    width: clamp(320px, 85vw, 1800px);
+    gap: 30px;
 
     & img {
-        width: 1000px;
+        width: clamp(100px, 50vw, 900px);
         justify-self: flex-end;
         align-self: center;
         border: 5px solid black;
@@ -914,8 +934,6 @@ img[alt="eecu-picture"] {
         }
 
         & img {
-            width: 365px;
-            height: 703px;
             border: 5px solid black;
             border-radius: 20px;
             justify-self: flex-end;
@@ -924,20 +942,22 @@ img[alt="eecu-picture"] {
     }
 }
 
+img[alt="bio-shield-services-snapshot"] {
+    width: clamp(100px, 50vw, 900px);
+    justify-self: flex-start;
+    align-self: center;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
 
 #bio-shield-info-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
-
-    & img {
-        width: 1000px;
-        justify-self: flex-start;
-        align-self: center;
-        border: 5px solid black;
-        border-radius: 20px;
-    }
+    margin: 0 auto;
+    width: clamp(320px, 85vw, 1800px);
 
     & article {
         display: flex;
@@ -955,11 +975,6 @@ img[alt="eecu-picture"] {
 
         & li {
             font-size: 30px;
-        }
-
-        & img {
-            aspect-ratio: 1/1;
-            width: 500px;
         }
     }
 }
@@ -1028,7 +1043,7 @@ img[alt="eecu-picture"] {
 
     & img {
         aspect-ratio: 1/1;
-        width: 350px;
+        width: clamp(150px, 30vh, 500px);
         border: 5px solid black;
         border-radius: 20px;
         justify-self: center;
@@ -1135,6 +1150,7 @@ img[alt="eecu-picture"] {
         display: flex;
         flex-direction: column;
         width: clamp(100px, 90vw, 900px);
+        margin: 0 auto;
 
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
