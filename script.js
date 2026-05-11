@@ -41,7 +41,7 @@ navbarToggle.addEventListener('click', () => {
 
 // Contact Form with Google App Script 
 
-function sendIt() {
+function sendMessage() {
     const name = document.getElementById('name').value
     const email = document.getElementById('email').value
     const subject = document.getElementById('subject').value
