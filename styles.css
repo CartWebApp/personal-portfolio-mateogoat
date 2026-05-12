@@ -508,7 +508,7 @@ img[alt="eecu-picture"] {
 
 
 #resume {
-    width: clamp(320px, 85vw, 1900px);
+    width: clamp(300px, 50vw, 1900px);
     margin: 0 auto;
     background-color: #222121;
     color: white;
