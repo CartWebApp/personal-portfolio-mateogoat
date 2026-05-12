@@ -122,6 +122,9 @@ section>h3 {
     padding: 20px;
     width: clamp(320px, 85vw, 1800px);
     margin: 0 auto;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #certifications-text>p {
@@ -138,6 +141,9 @@ section>h3 {
     padding: 20px;
     width: clamp(320px, 85vw, 1800px);
     margin: 0 auto;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #awards-text {
@@ -155,6 +161,9 @@ section>h3 {
     padding: 20px;
     width: clamp(320px, 85vw, 1800px);
     margin: 0 auto;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #hobbies-text {
@@ -170,6 +179,9 @@ section>h3 {
     padding: 20px;
     width: clamp(320px, 85vw, 1800px);
     margin: 0 auto;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
         border: 5px solid black;
@@ -2200,7 +2212,7 @@ footer {
 
 #drone-imagery-article p {
     font-size: clamp(.5rem, 6vw, 2rem);
-    justify-self:center;
+    justify-self: center;
 }
 
 
