@@ -104,6 +104,12 @@ section>h3 {
     margin: auto;
 }
 
+#cart-reflection-text {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .cart-reflection {
     display: grid;
@@ -343,6 +349,7 @@ section>h3 {
 .mvs-logo-portfolio {
     justify-self: center;
     width: clamp(100px, 70%, 400px);
+    border-radius: 15px;
 
 }
 
@@ -353,6 +360,8 @@ section>h3 {
 
 .google-logo-about {
     justify-self: center;
+    width: 315px;
+    height: 315px;
 }
 
 .showcase-award {
@@ -1029,7 +1038,6 @@ img[alt="bio-shield-services-snapshot"] {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    padding: 20px;
     animation: fadeInScale linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -1051,8 +1059,8 @@ img[alt="bio-shield-services-snapshot"] {
     }
 
     & img {
-        width: 365px;
-        height: 703px;
+        width: clamp(100px, 90vw, 450px);
+        margin: 0 auto;
         border: 5px solid black;
         border-radius: 20px;
         justify-self: center;
@@ -1350,6 +1358,9 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     align-items: center;
     gap: 10em;
     padding: 20px;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: clamp(20px, 20vw, 200px);
 }
 
 .zoologix-left {
@@ -1419,6 +1430,9 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     padding: 20px;
     width: clamp(320px, 85vw, 1800px);
     margin: 0 auto;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
         align-self: center;
@@ -1452,6 +1466,9 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & article {
         display: flex;
@@ -1482,6 +1499,9 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     padding: 20px;
     width: clamp(320px, 85vw, 1800px);
     margin: 0 auto;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 
     & img {
         justify-self: center;
@@ -1700,6 +1720,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    gap:9em;
 
     & h2 {
         font-size: clamp(2rem, 10vw, 5rem);
@@ -1715,7 +1736,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     flex-direction: column;
 
     & img {
-        height: clamp(450px, 10vw, 500px);
+        width: clamp(100px, 50vw, 900px);
         border-radius: 20px;
         justify-self: center;
         align-self: center;
@@ -1741,17 +1762,16 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     gap: clamp(20px, 20vw, 200px);
 
     & img {
-        height: clamp(450px, 10vw, 500px);
-        padding: 20px;
+        height: clamp(350px, 40vw, 500px);
         border-radius: 30px;
         border: 5px solid black;
+        align-self: center;
     }
 
     & article {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20px;
         width: clamp(100px, 90vw, 900px);
 
 
@@ -1807,8 +1827,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     animation-range: entry 0% cover 40%;
 
     & img {
-        height: clamp(450px, 10vw, 500px);
-        padding: 20px;
+        height: clamp(350px, 40vh, 500px);
         border-radius: 30px;
         border: 5px solid black;
         align-self: center;
@@ -1835,7 +1854,16 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     margin: 0 auto;
     gap: 30px;
 
+    & img {
+        align-self: center;
+    }
+
     & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
         & h2 {
             font-size: clamp(2rem, 10vw, 5rem);
         }
@@ -1851,7 +1879,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
 }
 
 img[alt="showcase-best-presentation-nominations"] {
-    height: clamp(450px, 10vw, 500px);
+    height: clamp(350px, 40vh, 700px);
     padding: 20px;
     border-radius: 30px;
     border: 5px solid black;
@@ -1899,7 +1927,7 @@ img[alt="showcase-best-presentation-nominations"] {
 .essay-project-left {
     display: flex;
     flex-direction: column;
-    gap: 4.7em;
+    gap: 22em;
 
     & h2 {
         font-size: clamp(2rem, 10vw, 5rem);
@@ -2158,9 +2186,40 @@ textarea::placeholder {
     gap: clamp(15px, 20vh, 50px);
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (max-width:1000px) {
 
+
+    .essay-project-left {
+        gap: 0px;
+    }
+
+    #showcase-overview {
+        grid-template-columns: 1fr;
+    }
+
+    #showcase-info-1 {
+        grid-template-columns: 1fr;
+    }
+
+    #showcase-info-2 {
+        grid-template-columns: 1fr;
+    }
+
+    #showcase-info-3 {
+        grid-template-columns: 1fr;
+    }
+
+    #showcase-project {
+        flex-direction: column;
+    }
 
     #essay-project {
         flex-direction: column;
@@ -2426,5 +2485,13 @@ textarea::placeholder {
         & section {
             flex-direction: column;
         }
+    }
+
+    #zoologix-project {
+        gap: 0px;
+    }
+
+    .showcase-left {
+        gap:0px;
     }
 }
