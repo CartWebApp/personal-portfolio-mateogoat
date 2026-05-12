@@ -554,6 +554,7 @@ img[alt="eecu-picture"] {
     background-color: #222121;
     color: white;
     padding: 2em;
+    margin-top:30px;
     border-radius: 20px;
     border: 5px solid #A42715;
 }
@@ -2535,5 +2536,11 @@ footer {
 
     .showcase-left {
         gap: 0px;
+    }
+
+    #resume-download > a {
+        justify-self:center;
+        padding:0;
+        margin: 0 auto;
     }
 }
