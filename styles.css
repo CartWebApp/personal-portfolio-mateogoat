@@ -1767,6 +1767,97 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
 }
 
 
+#showcase-info-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+    & article {
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+
+        & li {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+#showcase-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+    & img {
+        height: clamp(450px, 10vw, 500px);
+        padding: 20px;
+        border-radius: 30px;
+        border: 5px solid black;
+        align-self: center;
+    }
+
+    & article {
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+
+#showcase-info-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+
+    & article {
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+
+        & li {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+img[alt="showcase-best-presentation-nominations"] {
+    height: clamp(450px, 10vw, 500px);
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid black;
+    align-self: center;
+}
+
 /* Research Paper (may the force be with me) */
 
 
@@ -2072,7 +2163,7 @@ textarea::placeholder {
 
 
     #essay-project {
-        flex-direction:column;
+        flex-direction: column;
     }
 
     #essay-overview {
@@ -2093,6 +2184,10 @@ textarea::placeholder {
 
     #bio-shield-project {
         flex-direction: column;
+
+        & .bio-shield-left {
+            gap: 0px;
+        }
     }
 
     #bio-shield-info {
