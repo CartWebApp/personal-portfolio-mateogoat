@@ -451,7 +451,7 @@ img[alt="eecu-picture"] {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     direction: rtl;
-    width: clamp(320px, 85vw, 1800px);
+    width: clamp(320px, 85vw, 1900px);
     margin: 0 auto;
 
     & section {
@@ -479,7 +479,7 @@ img[alt="eecu-picture"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    width: clamp(320px, 85vw, 1800px);
+    width: clamp(320px, 85vw, 1900px);
     margin: 0 auto;
 
     & section {
@@ -508,12 +508,12 @@ img[alt="eecu-picture"] {
 
 
 #resume {
-    width: clamp(320px, 85vw, 1800px);
+    width: clamp(320px, 85vw, 1900px);
     margin: 0 auto;
-    background-color:#222121;
-    color:white;
-    padding:2em;
-    border-radius:20px;
+    background-color: #222121;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
     border: 5px solid #A42715;
 }
 
@@ -525,7 +525,7 @@ img[alt="eecu-picture"] {
     justify-items: center;
 
     & p {
-        font-size: clamp(.75rem, 5vw, 2rem);
+        font-size: clamp(1.5rem, 8vw, 2rem)
     }
 }
 
@@ -557,13 +557,14 @@ img[alt="eecu-picture"] {
 
 #contact {
     font-size: clamp(.75rem, 5vw, 2rem);
-    margin: 0 auto;
 
     & h4 {
         font-size: clamp(1.5rem, 8vw, 2rem);
     }
-
 }
+
+
+
 
 #professional-summary {
     font-size: clamp(.75rem, 5vw, 2rem);
@@ -579,6 +580,8 @@ img[alt="eecu-picture"] {
     display: flex;
     align-content: center;
     justify-content: center;
+    gap: clamp(20px, 20vw, 200px);
+
 }
 
 #project {
