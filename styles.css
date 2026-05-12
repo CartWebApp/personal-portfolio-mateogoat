@@ -381,6 +381,7 @@ section>h3 {
     justify-self: center;
     width: clamp(100px, 70%, 400px);
     border-radius: 15px;
+    aspect-ratio:1/1;
 
 }
 
