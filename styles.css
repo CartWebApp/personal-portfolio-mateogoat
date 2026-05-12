@@ -1720,7 +1720,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    gap:9em;
+    gap: 9em;
 
     & h2 {
         font-size: clamp(2rem, 10vw, 5rem);
@@ -2191,6 +2191,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & div {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+#drone-imagery-article p {
+    font-size: clamp(.5rem, 6vw, 2rem);
+    justify-self:center;
 }
 
 
@@ -2492,6 +2502,6 @@ footer {
     }
 
     .showcase-left {
-        gap:0px;
+        gap: 0px;
     }
 }
