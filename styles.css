@@ -952,8 +952,7 @@ img[alt="bio-shield-netlify-qr-code"] {
     animation-range: entry 0% cover 40%;
 
     & img {
-        width: clamp(100px, 50vw, 900px);
-        justify-self: flex-end;
+        width: clamp(200px, 80vw, 900px);
         align-self: center;
         border: 5px solid black;
         border-radius: 20px;
@@ -986,8 +985,7 @@ img[alt="bio-shield-netlify-qr-code"] {
 }
 
 img[alt="bio-shield-services-snapshot"] {
-    width: clamp(100px, 50vw, 900px);
-    justify-self: flex-start;
+    width: clamp(200px, 80vw, 900px);
     align-self: center;
     border: 5px solid black;
     border-radius: 20px;
@@ -1692,6 +1690,9 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
 }
 
 .showcase-left {
@@ -1718,6 +1719,7 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
         border-radius: 20px;
         justify-self: center;
         align-self: center;
+        border: 5px solid black;
     }
 
     & h2 {
@@ -1734,6 +1736,9 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: clamp(20px, 20vw, 200px);
 
     & img {
         height: clamp(450px, 10vw, 500px);
@@ -1761,6 +1766,222 @@ img[alt="mvs-notifcation-settings-snapshot-mobile"] {
     }
 }
 
+
+/* Research Paper (may the force be with me) */
+
+
+#essay-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: clamp(20px, 20vw, 200px);
+
+    & img {
+        border-radius: 15px;
+        border: 5px solid black;
+        height: clamp(200px, 85vw, 650px);
+    }
+}
+
+
+.essay-snapshot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: clamp(200px, 85vw, 2000px);
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+    }
+}
+
+
+.essay-project-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4.7em;
+
+    & h2 {
+        font-size: clamp(2rem, 10vw, 5rem);
+    }
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+    }
+}
+
+
+.essay-project-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h2 {
+        font-size: clamp(2rem, 10vw, 5rem);
+    }
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+    }
+}
+
+
+#essay-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+    & img {
+        height: clamp(200px, 85vw, 650px);
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & p {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+#essay-info-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+    & img {
+        height: clamp(200px, 85vw, 650px);
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & li {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+#essay-info-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+    & img {
+        height: clamp(200px, 85vw, 650px);
+        border: 5px solid black;
+        border-radius: 20px;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & li {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+#essay-info-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    width: clamp(320px, 85vw, 1800px);
+    margin: 0 auto;
+    gap: 30px;
+    animation: fadeInScale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+    & p {
+        font-size: clamp(.5rem, 10vw, 2rem);
+        align-self: center;
+        font-weight: 400;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & h2 {
+            font-size: clamp(2rem, 10vw, 5rem);
+        }
+
+        & li {
+            font-size: clamp(.5rem, 10vw, 2rem);
+        }
+    }
+}
+
+img[alt="qr-code-to-access-research-paper"] {
+    aspect-ratio: 1 / 1;
+    width: clamp(150px, 30vh, 500px);
+    border: 5px solid black;
+    border-radius: 20px;
+    align-self: center;
+
+}
+
+img[alt="research-paper-research-cards"] {
+    height: clamp(200px, 85vw, 650px);
+    border: 5px solid black;
+    border-radius: 20px;
+    align-self: center;
+}
 
 /* Contact Form */
 
@@ -1849,6 +2070,26 @@ textarea::placeholder {
 
 @media (max-width:1000px) {
 
+
+    #essay-project {
+        flex-direction:column;
+    }
+
+    #essay-overview {
+        grid-template-columns: 1fr;
+    }
+
+    #essay-info-1 {
+        grid-template-columns: 1fr;
+    }
+
+    #essay-info-2 {
+        grid-template-columns: 1fr;
+    }
+
+    #essay-info-3 {
+        grid-template-columns: 1fr;
+    }
 
     #bio-shield-project {
         flex-direction: column;
@@ -2090,6 +2331,5 @@ textarea::placeholder {
         & section {
             flex-direction: column;
         }
-
     }
 }
